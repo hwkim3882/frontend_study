@@ -180,6 +180,9 @@ header .sub-menu li a {
 header .sub-menu li a:hover {
   color: #4078c0;
 }
+#toggle-btn {
+  text-indent: -9999px;
+}
 
 /* visual */
 .section--visual {
@@ -388,4 +391,33 @@ footer .logo {
 }
 footer .logo:hover svg {
   fill: #4078c0;
+}
+
+/* MEDIA */
+@media (max-width: 1024px) {
+  header.section .inner {
+    max-width: none;
+    height: auto;
+    padding: 0 20px;
+  }
+  header .menu-group,
+  header .sign-group {
+    float: none;
+  }
+  header .logo {
+    padding: 12px 0;
+  }
+  header .toggle {
+    display: none;
+  }
+  #toggle-btn {
+    background: url("../img/toggle-btn.svg");
+    width: 18px;
+    height: 24px;
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    cursor: pointer;
+    /* text-indent: -9999px; */
+  }
 }
